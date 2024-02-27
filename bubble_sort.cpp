@@ -3,8 +3,8 @@
 using namespace std;
 
 vector<int> bubble_sort(vector<int> target) {
-	int n = target.size(); // µ¿Àû ¹è¿­ »çÀÌÁî È®ÀÎ
-	int temp; // buffer ÀúÀå ÈÄ È®ÀÎ
+	int n = target.size(); // ë™ì  ë°°ì—´ ì‚¬ì´ì¦ˆ í™•ì¸
+	int temp; // buffer ì €ì¥ í›„ í™•ì¸
 	for (int i = 0; i < n - 1; i++) {
 		for (int j = 0; j < n - i - 1; j++) {
 			if (target[j] > target[j + 1]) {
@@ -13,6 +13,7 @@ vector<int> bubble_sort(vector<int> target) {
 				target[j + 1] = temp;
 			}
 		}
+		// ì •ë ¬ ê³¼ì • ì¶œë ¥
 		for (int c = 0; c < n; c++) {
 			cout << target[c] << " ";
 		}
@@ -26,13 +27,10 @@ int main(void) {
 	vector<int> target = { 5,3,1,4,2 };
 	auto result = bubble_sort(target);
 
-	//Á¤·Ä ÈÄ °á°ú Ãâ·Â
+	//ì •ë ¬ í›„ ê²°ê³¼ ì¶œë ¥
 	cout << endl;
 	for (int i = 0; i < n; i++) {
 		cout << result[i] << " ";
 	}
 	return 0;
 }
-
-
-vector<int> target = { 5,3,1,4,2 };
