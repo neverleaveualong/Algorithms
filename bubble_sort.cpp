@@ -4,7 +4,7 @@ using namespace std;
 
 vector<int> bubble_sort(vector<int> target) {
 	int n = target.size(); // 동적 배열 사이즈 확인
-	int temp; // buffer 저장 후 확인
+	int temp; // buffer
 	for (int i = 0; i < n - 1; i++) {
 		for (int j = 0; j < n - i - 1; j++) {
 			if (target[j] > target[j + 1]) {
